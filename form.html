@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student registration form</title>
+</head>
+<body>
+    <h1>Student Registration Form</h1>
+    <form>
+        <div class="name">
+        <label for="name">Enter Full Name </label>
+        <input type="text" name="name" id="name" required/>
+        </div><br>
+        <div class="email">
+        <label for="email">Enter Email </label>
+        <input type="email" name="email" id="email" required/>
+        </div><br>
+        <div>
+            <label for="mobile">Phone Number </label>
+            <input type="number" name="mobile" id="mobile" pattern="[6-9]"/>
+        </div><br>
+            
+                <label>Gender</label><br>
+                <input type="radio" value="Male"/>Male
+                <input type="radio" value="Female"/>Female<br>
+                <br>
+                <label>Date of Birth</label>
+                <input type="date" id="dob" name="dob" /><br><br>
+                <lable>Course</lable>
+                <select name="course" id="course">
+                <option value="select">Select</option>
+                <option value="B.Tech">B.Tech</option>
+                <option value="bca">BCA</option>
+                <option value="mca">MCA</option>
+                <option value="mba">MBA</option>
+                </select><br><br>
+                <button type="submit"> Submit</button>
+
+        
+
+    </form>
+    
+</body>
+</html>
