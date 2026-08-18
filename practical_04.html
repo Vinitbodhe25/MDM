@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple E-Commerce</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <nav class="bg-blue-600 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+
+            <h1 class="text-2xl font-bold">
+                ShopEasy
+            </h1>
+
+            <div class="space-x-4">
+                <a href="#" class="hover:text-gray-200">Home</a>
+                <a href="#" class="hover:text-gray-200">Products</a>
+                <a href="#" class="hover:text-gray-200">Cart 🛒</a>
+            </div>
+
+        </div>
+    </nav>
+    <section class="container mx-auto px-5 py-10">
+        <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">
+            Our Products
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img
+                    src="https://m.media-amazon.com/images/I/41i357e-zIL._AC_UY1100_.jpg"
+                    class="w-full h-48 object-cover"
+                    alt="T-shirt">
+                <div class="p-5">
+                    <h3 class="text-xl font-bold">
+                        Sport T-Shirt
+                    </h3>
+                    <p class="text-blue-600 font-bold text-xl mt-3">
+                        ₹ 499
+                    </p>
+                    <button class="w-full bg-blue-600 text-white py-2 mt-4 rounded hover:bg-blue-700">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img
+                    src="https://m.media-amazon.com/images/I/71O8-ltHVAL.jpg"
+                    class="w-full h-48 object-cover"
+                    alt="Watch">
+                <div class="p-5">
+                    <h3 class="text-xl font-bold">
+                        Cricket Kit
+                    </h3>
+                    <p class="text-blue-600 font-bold text-xl mt-3">
+                        ₹ 4,999
+                    </p>
+                    <button class="w-full bg-blue-600 text-white py-2 mt-4 rounded hover:bg-blue-700">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img
+                    src="data:image/avif;base64,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"
+                    class="w-full h-48 object-cover"
+                    alt="Running Shoes">
+                <div class="p-5">
+                    <h3 class="text-xl font-bold">
+                        Running Shoes
+                    </h3>
+                    <p class="text-blue-600 font-bold text-xl mt-3">
+                        ₹1,999
+                    </p>
+                    <button class="w-full bg-blue-600 text-white py-2 mt-4 rounded hover:bg-blue-700">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuvNGVGqmi1pPWa-p8a7POFQCCUgcqPTGZ4P7WHdia9w&s=10"
+                    class="w-full h-48 object-cover"
+                    alt="Badminton">
+                <div class="p-5">
+                    <h3 class="text-xl font-bold">
+                        Badminton
+                    </h3>
+                    <p class="text-blue-600 font-bold text-xl mt-3">
+                        ₹999
+                    </p>
+                    <button class="w-full bg-blue-600 text-white py-2 mt-4 rounded hover:bg-blue-700">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-gray-800 text-white text-center p-5">
+        <p>
+            © 2026 ShopEasy. All Rights Reserved.
+        </p>
+    </footer>
+</body>
+</html>
