@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Grade Calculator</title>
+
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+
+    <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
+
+        <h2 class="text-2xl font-bold text-center text-blue-600 mb-6">
+            Student Grade Calculator
+        </h2>
+
+        <label class="block mb-2 font-medium">Student Name:</label>
+        <input type="text" id="name"
+            class="w-full border border-gray-300 rounded px-3 py-2 mb-4"
+            placeholder="Enter student name">
+
+        <label class="block mb-2 font-medium">
+            Maths (out of 100):
+        </label>
+        <input type="number" id="mat" min="0" max="100"
+            class="w-full border border-gray-300 rounded px-3 py-2 mb-4">
+
+        <label class="block mb-2 font-medium">
+            OOP's (out of 100):
+        </label>
+        <input type="number" id="oop" min="0" max="100"
+            class="w-full border border-gray-300 rounded px-3 py-2 mb-4">
+
+        <label class="block mb-2 font-medium">
+            DSA (out of 100):
+        </label>
+        <input type="number" id="dsa" min="0" max="100"
+            class="w-full border border-gray-300 rounded px-3 py-2 mb-5">
+
+        <button onclick="calculateGrade()"
+            class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700">
+            Calculate Grade
+        </button>
+
+        <div id="result"
+            class="mt-6 p-4 bg-gray-50 rounded text-gray-700">
+        </div>
+
+    </div>
+
+    <script>
+        function calculateGrade() {
+
+            let name = document.getElementById("name").value;
+            let mat = Number(document.getElementById("mat").value);
+            let oop = Number(document.getElementById("oop").value);
+            let dsa = Number(document.getElementById("dsa").value);
+
+            let total = mat + oop + dsa;
+            let percentage = total / 3;
+
+            let grade;
+
+            if (percentage >= 90)
+                grade = "A+";
+            else if (percentage >= 80)
+                grade = "A";
+            else if (percentage >= 70)
+                grade = "B";
+            else if (percentage >= 60)
+                grade = "C";
+            else if (percentage >= 50)
+                grade = "D";
+            else
+                grade = "F";
+
+            document.getElementById("result").innerHTML =
+                "<b>Student Name:</b> " + name + "<br>" +
+                "<b>Total Marks:</b> " + total + " / 300<br>" +
+                "<b>Percentage:</b> " + percentage.toFixed(2) + "%<br>" +
+                "<b>Grade:</b> " + grade;
+        }
+    </script>
+
+</body>
+</html>

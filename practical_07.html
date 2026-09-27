@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Profile</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <nav class="bg-blue-700 text-white p-4">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">
+                S.B Jain College Of Engineering
+            </h1>
+            <div class="space-x-5 hidden md:block">
+                <a href="#home" class="hover:text-yellow-300">Home</a>
+                <a href="#about" class="hover:text-yellow-300">About</a>
+                <a href="#courses" class="hover:text-yellow-300">Courses</a>
+                <a href="#faculty" class="hover:text-yellow-300">Faculty</a>
+                <a href="#contact" class="hover:text-yellow-300">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <section id="home" class="bg-blue-100 text-center py-20">
+        <h2 class="text-4xl font-bold text-blue-800">
+            Welcome to Sbjit.
+        </h2>
+        <p class="mt-4 text-lg">
+            Education | Innovation | Excellence
+        </p>
+        <button onclick="welcomeMessage()"
+            class="mt-6 bg-blue-700 text-white px-6 py-3 rounded-lg hover:bg-blue-900">
+            Welcome
+        </button>
+    </section>
+    <section id="about" class="max-w-6xl mx-auto p-8">
+        <h2 class="text-3xl font-bold text-center text-blue-700">
+            About Our College
+        </h2>
+        <p class="mt-5 text-center text-gray-700">
+            SB Jain College is a modern educational institution that provides
+            quality education and develops students with technical,
+            communication and professional skills.
+        </p>
+    </section>
+    <section id="courses" class="bg-white p-8">
+        <h2 class="text-3xl font-bold text-center text-blue-700">
+            Our Courses
+        </h2>
+        <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-6 mt-8">
+            <div class="bg-blue-100 p-6 rounded-lg shadow">
+                <h3 class="text-xl font-bold">B.Tech</h3>
+                <p class="mt-2">
+                    CSE(AI&ML)
+                </p>
+            </div>
+            <div class="bg-blue-100 p-6 rounded-lg shadow">
+                <h3 class="text-xl font-bold">BCA</h3>
+                <p class="mt-2">
+                    Bachelor of Computer Applications
+                </p>
+            </div>
+            <div class="bg-blue-100 p-6 rounded-lg shadow">
+                <h3 class="text-xl font-bold">MCA</h3>
+                <p class="mt-2">
+                    Master of Computer Applications
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="bg-blue-700 text-white p-8">
+        <h2 class="text-3xl font-bold text-center">
+            Contact Us
+        </h2>
+        <div class="text-center mt-5">
+            <p>Email: sbjit@gmail.com</p>
+            <p>Phone: +91 9999922222</p>
+            <p>Address: Yerla Nagpur, Maharashtra</p>
+        </div>
+    </section>
+    <footer class="bg-gray-900 text-white text-center p-4">
+        <p>
+            © 2026 S.B Jain College. All Rights Reserved.
+        </p>
+    </footer>
+    <script>
+        function welcomeMessage() {
+            alert("Welcome to Sbjit College!");
+        }
+    </script>
+</body>
+</html>
